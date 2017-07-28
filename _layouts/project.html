@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% if page.image %}
+<img style="float: left; padding: 10px" src="{{ page.image }}" alt="{{ page.alt }}" height="100" width="100"/>
+{% endif %}
+
+<p>
+<h1><a href="{{ page.external }}">{{ page.title }}</a></h1>
+  {% if page.live %}
+  <a href="{{ page.live }}">(Live version)</a>
+  {% endif %}
+  {% if page.coauthors %}
+  <em>{{ page.coauthors }}</em>
+  {% endif %}
+</p>
+
+{{ content }}

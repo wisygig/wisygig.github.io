@@ -1,0 +1,25 @@
+---
+layout: page 
+title: Projects
+permalink: /projects/
+---
+
+<div class="projects">
+  <ul>
+    {% for project in site.portfolio %}
+      <li>
+          <a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h3>Notes and publications</h3>
+  <ul>
+    {% assign notes = site.notes | sort: date %}
+    {% for note in notes reversed %}
+      <li>
+          <a href="{{ note.url | relative_url }}">{{ note.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
