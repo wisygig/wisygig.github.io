@@ -10,6 +10,20 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
+{% highlight python %}
+class Surprised(object):
+	def __init__(self):
+		pass
+	def __str__(self):
+		return 'Surprise!'
+{% endhighlight %}
+
+How about `this`? And what happens when I write $$\int f(x)\,dx$$.
+
+$$\begin{align} \iota_x: \text{End}(X, Y) &\rightarrow Y \\
+f &\mapsto f(x)\end{align}
+$$
+
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"
